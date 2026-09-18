@@ -26,7 +26,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="vakken.html">Vakken</a>
-                <a href="rooster.html">Rooster</a>
+                <a href="rooster1.html">Rooster</a>
                 <a href="contact.php">Contact</a>
             </nav>
         <div class="header-banner">
@@ -131,7 +131,7 @@
 
             <a href="vakken.html">Vakken</a>
 
-            <a href="rooster.html">Rooster</a>
+            <a href="rooster1.html">Rooster</a>
 
             <a href="contact.php">Contact</a>
 
