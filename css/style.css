@@ -24,7 +24,42 @@ header {
     align-items: center; 
     justify-content: space-between; 
 } 
- 
+
+.header-banner {
+    background-color: #FFD200;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header-banner p {
+    margin: 0;
+    font-size: 18px;
+    color: #0c003e;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 600;
+}
+
+.header-banner h2 {
+    margin: 8px 0 0;
+    font-size: 28px;
+    color: #0c003e;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 700;
+}
+
+.header-banner h2 span {
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.header-banner h2 em {
+    font-style: italic;
+    margin-left: 6px;
+    color: #333;
+}
+
 .curio { 
     margin: 0; 
     color: white; 
