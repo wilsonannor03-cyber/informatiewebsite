@@ -1,321 +1,492 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
-    color: #0c003e;
-}
-
-* {
-    box-sizing: border-box;
-}
-
+html, 
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: "Roboto", Arial, sans-serif; 
+    color: #0c003e; 
+} 
+ 
+* { 
+    box-sizing: border-box; 
+} 
+ 
 header { 
-    background-color: rgb(236, 192, 220);
-    width: 100%;
-}
-.wrapper {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 30px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.curio {
-    margin: 0;
-    color: white;
-    font-family: "Oxanium", sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-}
-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-nav a {
-    color: white;
-    font-family: "Oxanium", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-
-    text-decoration: none;
-    padding: 5px 0;
-
-    background-color: transparent;
-    border: none;
-}
-nav a:hover {
-    color: #0c003e;
-}
-
-.footer-nav {
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-
-.footer-nav a {
-    color: rgb(236, 192, 220);
-
-    margin: 0 15px;
-
-    text-decoration: none;
-
-    font-family: "Oxanium", sans-serif;
-    font-weight: 700;
-}
-
-.footer-nav a:hover {
-    color: white;
-}
-
-@media (max-width: 768px) {
-
-    .wrapper {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .curio {
-        font-size: 36px;
-    }
-
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
-
-    .h1-main {
-        font-size: 45px;
-    }
-
-    .tekst {
-        padding: 40px 20px;
-    }
-
-    .footer-h1 {
-        font-size: 40px;
-    }
-}
-.main-homepage {
-    position: relative;
-
-    background-image: url("../img/student.jpg");
-    background-size: cover;
-    background-position: center;
-
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-main::before {
-    content: "";
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(236, 192, 220, 0.25);
-}
-
-
-
-.h1-main {
-    position: relative;
-    z-index: 2;
-
-    font-family: "Oxanium", sans-serif;
-    font-size: 70px;
-    font-weight: 700;
-
-    color: #0c003e;
-
-    margin: 0;
-    text-align: center;
-}
-
-
-
-section {
-    background-color: rgb(236, 192, 220);
-}
-
-.tekst {
-    padding: 60px 80px;
-    color: white;
-}
-.vakken {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.vakken h2 {
-    width: 100%;
-    text-align: center;
-
-    color: #0c003e;
-    font-family: "Oxanium", sans-serif;
-    font-size: 36px;
-}
-
-
-
-.vak,
-.rooster,
-.foto,
-.toekomst,
-.ervaring {
-    background-color: #0c003e;
-
-    color: white;
-
-    border-radius: 10px;
-
-    padding: 30px;
-
-    flex: 1 1 300px;
-
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.rooster img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.rooster-foto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-
-    margin-top: 30px;
-}
-
-.rooster-foto h2 {
-    color: white;
-    font-family: "Oxanium", sans-serif;
-}
-
-
-.toekomst-ervaring {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-
-    margin-top: 30px;
-}
-
-.toekomst-ervaring h2 {
-    color: white;
-    font-family: "Oxanium", sans-serif;
-}
-.vakken-main {
-    position: relative;
-
-    min-height: 100vh;
-
-    padding: 70px 80px;
-
-    background-image: url("../img/Sanne-Bas.jpg");
-    background-size: cover;
-    background-position: center;
-
-    text-align: center;
-}
-.vakken-main::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-.vakken-titel {
-    position: relative;
-    z-index: 1;
-
-    color: #0c003e;
-
-    font-family: "Oxanium", sans-serif;
-
-    font-size: 60px;
-
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-.vakken-grid {
-    position: relative;
-    z-index: 1;
-
-    max-width: 1000px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 30px;
-}
-
-
-/* Dezelfde soort blokken als op Home */
-
-.vakken-grid .vak {
-    background-color: #0c003e;
-
-    color: white;
-
-    border-radius: 10px;
-
-    padding: 30px;
-
-    min-height: 150px;
-
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-
-    text-align: center;
-}
-
-.vakken-grid .vak h2 {
-    color: rgb(236, 192, 220);
-
-    font-family: "Oxanium", sans-serif;
-
-    font-size: 28px;
-
-    margin-top: 0;
-}
-
-.vakken-grid .vak p {
-    color: white;
-
-    font-family: "Roboto", sans-serif;
-
-    line-height: 1.5;
+    background-color: rgb(236, 192, 220); 
+    width: 100%; 
+} 
+ 
+.wrapper { 
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 20px 30px; 
+ 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+} 
+ 
+.curio { 
+    margin: 0; 
+    color: white; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 42px; 
+    font-weight: 700; 
+} 
+ 
+nav { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+} 
+ 
+nav a { 
+    color: white; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 20px; 
+    font-weight: 700; 
+    text-decoration: none; 
+    padding: 5px 0; 
+    background-color: transparent; 
+    border: none; 
+} 
+ 
+nav a:hover { 
+    color: #0c003e; 
+} 
+ 
+.main-homepage { 
+    position: relative; 
+    background-image: url("../img/student.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+ 
+main::before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(236, 192, 220, 0.25); 
+} 
+ 
+.h1-main { 
+    position: relative; 
+    z-index: 2; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 70px; 
+    font-weight: 700; 
+    color: #0c003e; 
+    margin: 0; 
+    text-align: center; 
+} 
+ 
+section { 
+    background-color: rgb(236, 192, 220); 
+} 
+ 
+.tekst { 
+    padding: 60px 80px; 
+    color: white; 
+} 
+ 
+.vakken { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+} 
+ 
+.vakken h2 { 
+    width: 100%; 
+    text-align: center; 
+    color: #0c003e; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 36px; 
+} 
+ 
+.vak, 
+.rooster, 
+.foto, 
+.toekomst, 
+.ervaring { 
+    background-color: #0c003e; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 30px; 
+    flex: 1 1 300px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+} 
+ 
+.rooster img { 
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+} 
+ 
+.rooster-foto { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 30px; 
+} 
+ 
+.rooster-foto h2 { 
+    color: white; 
+    font-family: "Oxanium", sans-serif; 
+} 
+ 
+.toekomst-ervaring { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 30px; 
+} 
+ 
+.toekomst-ervaring h2 { 
+    color: white; 
+    font-family: "Oxanium", sans-serif; 
+} 
+ 
+.footer { 
+    background-color: #0c003e; 
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center; 
+} 
+ 
+.footer-h1 { 
+    color: rgb(236, 192, 220); 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 50px; 
+    margin: 10px 0; 
+} 
+ 
+.footer-nav { 
+    margin-top: 25px; 
+    margin-bottom: 20px; 
+} 
+ 
+.footer-nav a { 
+    color: rgb(236, 192, 220); 
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-family: "Oxanium", sans-serif; 
+    font-weight: 700; 
+} 
+ 
+.footer-nav a:hover { 
+    color: white; 
+} 
+ 
+@media (max-width: 768px) { 
+    .wrapper { 
+        flex-direction: column; 
+        gap: 20px; 
+    } 
+ 
+    .curio { 
+        font-size: 36px; 
+    } 
+ 
+    nav { 
+        gap: 15px; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    } 
+ 
+    nav a { 
+        font-size: 16px; 
+    } 
+ 
+    .h1-main { 
+        font-size: 45px; 
+    } 
+ 
+    .tekst { 
+        padding: 40px 20px; 
+    } 
+ 
+    .footer-h1 { 
+        font-size: 40px; 
+    } 
+} 
+ 
+.vakken-main { 
+    position: relative; 
+    min-height: 100vh; 
+    padding: 70px 80px; 
+    background-image: url("../img/Sanne-Bas.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center; 
+} 
+ 
+.vakken-main::before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.25); 
+} 
+ 
+.vakken-titel { 
+    position: relative; 
+    z-index: 1; 
+    color: #0c003e; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 60px; 
+    margin-top: 0; 
+    margin-bottom: 50px; 
+} 
+ 
+.vakken-grid { 
+    position: relative; 
+    z-index: 1; 
+    max-width: 1000px; 
+    margin: auto; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+} 
+ 
+.vakken-grid .vak { 
+    background-color: #0c003e; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 30px; 
+    min-height: 150px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
+} 
+ 
+.vakken-grid .vak h2 { 
+    color: rgb(236, 192, 220); 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 28px; 
+    margin-top: 0; 
+} 
+ 
+.vakken-grid .vak p { 
+    color: white; 
+    font-family: "Roboto", sans-serif; 
+    line-height: 1.5; 
+} 
+ 
+.vakken-grid .vak:hover { 
+    transform: translateY(-5px); 
+} 
+ 
+@media (max-width: 768px) { 
+    .vakken-main { 
+        padding: 50px 20px; 
+    } 
+ 
+    .vakken-grid { 
+        grid-template-columns: 1fr; 
+    } 
+ 
+    .vakken-titel { 
+        font-size: 45px; 
+    } 
+} 
+ 
+.blok-main { 
+    background-color: white; 
+    min-height: 80vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 80px; 
+} 
+ 
+.blok-main img { 
+    width: 1000px; 
+    max-width: 80%; 
+    height: auto; 
+    display: block; 
+    border-radius: 10px; 
+} 
+ 
+.contact-main { 
+    background-color: white; 
+    min-height: 80vh; 
+    padding: 70px 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+ 
+.contact-main > h1 { 
+    color: #0c003e; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 50px; 
+    margin-top: 0; 
+    margin-bottom: 40px; 
+} 
+ 
+.contact-box { 
+    background-color: #0c003e; 
+    color: white; 
+    width: 100%; 
+    max-width: 700px; 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+} 
+ 
+.contact-box h2 { 
+    color: rgb(247, 216, 221); 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 32px; 
+    margin-top: 0; 
+} 
+ 
+.contact-box p { 
+    line-height: 1.6; 
+} 
+ 
+.contact-box form { 
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 30px; 
+} 
+ 
+.contact-box label { 
+    margin-bottom: 8px; 
+    font-weight: 700; 
+} 
+ 
+.contact-box input, 
+.contact-box textarea { 
+    font-family: "Roboto", sans-serif; 
+    font-size: 16px; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: white; 
+    color: #0c003e; 
+} 
+ 
+.contact-box textarea { 
+    resize: vertical; 
+} 
+ 
+.contact-box button { 
+    background-color: rgb(236, 192, 220); 
+    color: #0c003e; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 18px; 
+    font-weight: 700; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 12px 25px; 
+    cursor: pointer; 
+} 
+ 
+.contact-box button:hover { 
+    background-color: white; 
+} 
+ 
+@media (max-width: 768px) { 
+    .contact-main { 
+        padding: 50px 20px; 
+    } 
+ 
+    .contact-main > h1 { 
+        font-size: 40px; 
+    } 
+ 
+    .contact-box { 
+        padding: 25px; 
+    } 
+} 
+ 
+.rooster-main { 
+    background-color: white; 
+    min-height: 80vh; 
+    padding: 60px 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+} 
+ 
+.rooster-main h1 { 
+    color: #0c003e; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 50px; 
+    margin-top: 0; 
+    margin-bottom: 40px; 
+} 
+ 
+.rooster-main img { 
+    width: 700px; 
+    max-width: 90%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+} 
+ 
+.foto-main { 
+    background-color: white; 
+    min-height: 80vh; 
+    padding: 60px 50px; 
+    text-align: center; 
+} 
+ 
+.foto-main > h1 { 
+    color: #0c003e; 
+    font-family: "Oxanium", sans-serif; 
+    font-size: 50px; 
+    margin-top: 0; 
+    margin-bottom: 50px; 
+} 
+ 
+.foto-grid { 
+    max-width: 1000px; 
+    margin: auto; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+} 
+ 
+.foto-card { 
+    background-color: #0c003e; 
+    padding: 20px; 
+    border-radius: 10px; 
+} 
+ 
+.foto-card img { 
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    display: block; 
+} 
+ 
+@media (max-width: 768px) { 
+    .foto-main { 
+        padding: 50px 20px; 
+    } 
+ 
+    .foto-grid { 
+        grid-template-columns: 1fr; 
+    } 
+ 
+    .foto-main > h1 { 
+        font-size: 40px; 
+    } 
 }
