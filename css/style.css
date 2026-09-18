@@ -228,3 +228,94 @@ section {
     color: white;
     font-family: "Oxanium", sans-serif;
 }
+.vakken-main {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 70px 80px;
+
+    background-image: url("../img/Sanne-Bas.jpg");
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+.vakken-main::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.vakken-titel {
+    position: relative;
+    z-index: 1;
+
+    color: #0c003e;
+
+    font-family: "Oxanium", sans-serif;
+
+    font-size: 60px;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.vakken-grid {
+    position: relative;
+    z-index: 1;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* Dezelfde soort blokken als op Home */
+
+.vakken-grid .vak {
+    background-color: #0c003e;
+
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    min-height: 150px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+.vakken-grid .vak h2 {
+    color: rgb(236, 192, 220);
+
+    font-family: "Oxanium", sans-serif;
+
+    font-size: 28px;
+
+    margin-top: 0;
+}
+
+.vakken-grid .vak p {
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+
+    line-height: 1.5;
+}
